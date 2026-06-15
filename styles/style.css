@@ -1,0 +1,62 @@
+:root {
+}
+body {
+  margin: 0;
+  max-width: min(100%, 1440px);
+  background: #111111;
+  color: #fff;
+  padding: 40px 120px 100px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: regular;
+}
+.title-font {
+  font-family: "Archivo Black";
+  font-weight: 400;
+}
+/* ===== HEADER HEADER HEADER ===== */
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.profile-picture {
+  height: 500px;
+  width: 387px;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+  margin-bottom: auto;
+}
+.profile-info__name {
+  margin: 0;
+}
+.profile-info__job-title {
+  opacity: 50%;
+  margin: 0;
+}
+.profile-info__list {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+  column-gap: 30px;
+}
+.profile-info__list-item {
+  width: fit-content;
+}
+/* ===== MAIN MAIN MAIN MAIN  ===== */
+.digital-tools {
+  display: flex;
+  justify-items: space-between;
+  column-gap: 180px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+/* ===== FOOTER FOOTER FOOTER ===== */
