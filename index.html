@@ -26,7 +26,7 @@
         alt="Foto de Milán Drazen, desarrollador web">
       </img>
       <div class="profile-info">
-        <h1 class="profile-info__name title-font">Milán Drazen Todorovic Sasmay</h1>
+        <h1 class="profile-info__name title-font">Milán Drazen<br>Todorovic Sasmay</h1>
         <h4 class="profile-info__job-title">Desarrollador Full-Stack Junior | TypeScript, React, Node.js</h4>
         <p>
           Desarrollador web junior con experiencia práctica creando interfaces
@@ -36,20 +36,18 @@
           GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro
           y resolver problemas de forma estructurada. Motivada por seguir
           aprendiendo, asumir nuevos retos y aprovechar oportunidades para
-          crecer como desarrolladora.
+          crecer como desarrollador.
         </p>
         <ul class="profile-info__list">
-          <li class="profile-info__list-item">Descargar CV</li>
-          <li class="profile-info__list-item">Enlace a GitHub</li>
-          <li class="profile-info__list-item">Hablemos</li>
+          <li class="profile-info__list-item"><a class="hover-opacity-50" href="">Descargar CV</a></li>
+          <li class="profile-info__list-item"><a class="hover-opacity-50" href="">Enlace a GitHub</a></li>
+          <li class="profile-info__list-item"><a class="hover-opacity-50" href="">Hablemos</a></li>
         </ul>
       </div>
     </header>
     <main class="content">
-      <section class="content-block">
-        <h2 class="content-block__title title-font">
-          Habilidades y herramientas
-        </h2>
+      <section class="content-block">  <!-- ### INICIO SECCIÓN HERRAMIENTAS ### -->
+        <h2 class="content-block__title title-font">Habilidades y herramientas</h2>
         <div class="content-block__content digital-tools">
           <img src="images/logo_html.svg" alt="Logo de HTML">
           <img src="images/logo_css.svg" alt="Logo de CSS">
@@ -58,11 +56,58 @@
           <img src="images/logo_github.svg" alt="Logo de GitHub">
           <img src="images/logo_chatgpt.svg" alt="Logo de chatGPT">
         </div>
-      </section>
-      <section class="content-block proyects">
+      </section>                    <!-- ### FIN SECCIÓN HERRAMIENTAS ### -->
+      <section class="content-block">      <!-- ### INICIO SECCIÓN PROYECTOS ### -->
         <h2 class="content-block__title title-font">Proyectos destacados</h2>
-        <div class="content-block__content"></div>
-      </section>
+        <div class="content-block__content my-projects">
+          <div class="project-box"> <!-- PROYECTO ### 1 ### Landing Café-->
+            <div class="project-box__display">
+              <img src="images/cafe_landing_page_screenshot.png" alt="Pantallazo de landing page de cafetería">
+              <div class="project-box__display__logos">
+                <img src="images/logo_html.svg" alt="Logo de HTML">
+                <img src="images/logo_css.svg" alt="Logo de CSS">
+              </div>
+            </div>
+            <div class="project-box__info">
+              <p class="project-box__info__title">Página web de una cafetería</p>
+              <p class="project-box__info__description">Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional. Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</p>
+              <div class="project-box__info__links">
+                <div class="project-box__info__link hover-opacity-50 purple-live-demo">
+                  <img class="project-box__info__link__icon" src="images/open_link_icon.svg" alt="Icono de abrir link">
+                  <p class="project-box__info__link__text">Demo en vivo</p>
+                </div>
+                <div class="project-box__info__link hover-opacity-50">
+                  <img class="project-box__info__link__icon" src="images/logo_github.svg" alt="Icono de GitHub">
+                  <p class="project-box__info__link__text">GitHub</p>
+                </div>
+              </div>
+            </div>
+          </div>         <!-- PROYECTO ### 1 ### -->
+          <div class="project-box">   <!-- PROYECTO ### 2 ### Por llenar -->
+            <div class="project-box__display">
+              <img src="images/cafe_landing_page_screenshot.png" alt="Pantallazo de landing page de cafetería">
+              <div class="project-box__display__logos">
+                <img src="images/logo_javascript.svg" alt="Logo de JavaScript">
+                <img src="images/logo_react.svg" alt="Logo de React">
+              </div>
+            </div>
+            <div class="project-box__info">
+              <h3 class="project-box__info__title">Página web de una cafetería</h3>
+              <p class="project-box__info__description">Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional. Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</p>
+              <div class="project-box__info__links">
+                <div class="project-box__info__link hover-opacity-50 purple-live-demo">
+                  <img class="project-box__info__link__icon" src="images/open_link_icon.svg" alt="Icono de abrir link">
+                  <p class="project-box__info__link__text">Demo en vivo</p>
+                </div>
+                <div class="project-box__info__link hover-opacity-50">
+                  <img class="project-box__info__link__icon" src="images/logo_github.svg" alt="Icono de GitHub">
+                  <p class="project-box__info__link__text">GitHub</p>
+                </div>
+              </div>
+            </div>
+          </div>          <!-- PROYECTO ### 2 ### -->
+        </div>
+      </section>        <!-- ### FIN CÓDIGOS DE PROYECTOS ### -->
     </main>
     <footer class="footer"></footer>
   </body>
