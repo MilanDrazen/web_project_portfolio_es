@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal; /* Esto equivale a 400 */
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-size: 16px;
   line-height: 1;
@@ -133,7 +153,8 @@ body {
   flex-grow: 1;
 }
 .project-box__display {
-  height: 330px;
+  aspect-ratio: 16/9;
+  width: 100%;
   position: relative;
 }
 .project-box__display__image {
@@ -155,7 +176,7 @@ body {
 .project-box__info {
   margin: 0;
   padding: 30px;
-  height: 340px;
+  height: fit-content;
   background-color: #1c1c1c;
   box-sizing: border-box;
 }
@@ -233,16 +254,9 @@ body {
 }
 
 /*             #####  MEDIA QUERIES #### */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   body {
-    margin: 0 auto;
-    max-width: min(100%, 1440px);
-    background: #111111;
-    color: #fff;
     padding: 40px 40px 102px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
   }
   .profile-picture {
     height: 280px;
@@ -274,7 +288,7 @@ body {
     height: fit-content;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   body {
     margin: 0 auto;
     max-width: min(100%, 1440px);
@@ -286,16 +300,13 @@ body {
     font-style: normal;
   }
   .header {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     row-gap: 30px;
   }
   .profile-picture {
     width: 100%;
     aspect-ratio: 1 / 1;
     height: auto;
-    border-radius: 2%;
     object-fit: cover;
   }
   .profile-info {
@@ -306,9 +317,7 @@ body {
   }
   .profile-info__job-title {
     font-size: 1rem;
-    opacity: 50%;
     margin: 0 0 10px;
-    font-weight: 400;
   }
   .profile-info__description {
     font-size: 1rem;
@@ -338,7 +347,6 @@ body {
   .project-box {
     min-width: 100px;
     width: 100%;
-    flex-grow: 1;
   }
   .project-box__display {
     height: auto;
